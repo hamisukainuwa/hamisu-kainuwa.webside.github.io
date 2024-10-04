@@ -1,0 +1,95 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<title>Hamisu kainuwa web page</title>
+<style type="text/css">
+body{
+padding:10px;
+margin:10px;
+font-size:10px;
+border:20px solid #4533ff;
+background-color:white;
+color:white;
+}
+img{
+padding:0px;
+margin:0px;
+width:50px;
+heght:20px;
+margin-left:200px;
+border-radius:5px;
+}
+h1{
+color:red;
+}
+h2{
+padding:8px;
+margin-left:170px;
+color:white;
+background-color:red;
+width:100px;
+height:20px;
+border-radius:5px;
+font-size:1px;
+size:10px;
+}
+p{
+color:blue;
+}
+.box{
+border:2px solid #333;
+padding:10px;
+}
+.rounded-border{
+border-radius:5px;
+}
+.highlight{
+background-color:blue;
+}
+
+
+.cta-button{
+background-color:#4caf50;
+color:red;
+padding:10px 20px;
+font-size:16px;
+border:none;
+cursor:pointer;
+border-radius:10px;
+}
+.cta-button:hover{
+background-color:45a049;
+
+}
+</style>
+<body>
+<form onsubmit="return validateform()">
+<div class="box rounded-border highlight">WELCOME TO AFABROS COMPUTER COLLEGE</div>
+<h1><u>Online Classs</u></h1>
+<b><h2>contact Hamisu Kainuwa for more information about HTML Javascript and CSS</h2>
+<p><b>please fill out this field below</p>
+<p>Thank you for register our web page</p></b>
+<img src="/storage/emulated/0/DCIM/camera/IMG_20240711_084924.jpg" id="profile- pic"><
+<br>
+<input type="text" id="username"placeholder="username">
+<br><br>
+<input type="password" id="password"placeholder="password">
+
+<br><br>
+<button class="cta-button">Go to Next Page</button>
+</form>
+<script>
+function validateform(){
+var username=document.getElementById("username").value;
+var password=document.getElementById("password").value;
+
+if (username===""||password===""){
+alert("username and password are required");
+return false;
+}
+// additional validation logic...
+return True;
+}
+</script>
+</body>
+</head>

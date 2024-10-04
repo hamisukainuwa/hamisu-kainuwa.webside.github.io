@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<title> my application</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<style type="text/css">
+body{font-family:real,sans-serif;
+bockground-color:#f5f5f5;
+margin:0;
+padding:20px;
+}
+h1{
+color:#00f;
+}
+#content{
+margin-top:20px;
+}
+lable,input,button{
+display:block;
+margin-bottom:10px;
+color:#f00;
+}
+button{
+background-color:#333;
+color:#fff;
+border:none;
+padding:10px;
+corse:pointer;
+}
+#message{
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+<h1>welcome to my application</h1>
+<div id="content">
+<label for="name">Name</label>
+<input type="text" id="name"/>
+<button onclick="sayHello()">Say Hello</button>
+<p id="message"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

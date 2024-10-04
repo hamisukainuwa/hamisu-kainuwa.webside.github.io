@@ -1,0 +1,247 @@
+<!Doctype html>
+<html>
+<head>
+<title> css drawing/hause </title>
+<link rel="stylesheet"type="text/css" href="style.css">
+</head>
+<body>
+<style>
+
+
+house{
+margin: 1;
+padding: 2;
+box-sizing:border-box;}
+.house{
+display:flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+overflow: hidden;
+}
+.house {
+position: relative;
+width:500px;
+height:100px;
+background: #161;
+border-bottom: 10px solid #454545;
+}
+.main {
+position: absolute;
+bottom: 10;
+left: 100%;
+transform: translatex(-50%);
+}
+.main::before {
+content:"";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height:100px;
+background:rgba(0,0,0,0,.1);
+}
+.roof {
+position: absolute;
+top: 5px;
+height: 100px;
+width: 1000px;
+background: #111;
+}
+roof::before {
+content:"";
+position: absolute;
+top: 10;
+left: 50;
+width: 59%;
+height: 100%;
+background: #257582;
+transform: skewx(330deg);
+}
+.roof::after{
+content:"";
+position: absolute;
+top: 0;
+left: 0;
+width: 73%;
+height: 100%;
+background: #9f9;
+transform: skewx(330deg);
+}
+front {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform:translatex(-850%);
+width: 200px;
+height: 200px;
+background: #000;
+}
+.front::before {
+content:"";
+position:absolute;
+left: 50%;
+top: 65px;
+width: 126px;
+height: 126px;
+background: #ff0;
+transform: translate(50%) rotate(45deg);
+border-top: 3px solid #222;
+border-left:3px solid #222;
+}
+front::after {
+content:"";
+position: absolute;
+top: -20px;
+left: 50%;
+transform: translatex(-50%);
+width: 120px;
+height:60px;
+background: #257582;
+background-image:linear-gradiend (to right,transparent 10%, transparent 90%, #333 90%), linear-gradient (to bottom,trasparent 10% #6d6d7d 10%, #6d6d7d 90%);
+background-size:10px 15px;
+border-top-left-radius:100px;
+border-top-right-radius:100px;
+border: 4px solid #333;
+}
+.door {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translatex(-50%);
+top:250px;
+width: 60px;
+height: 80px;
+background: #424242;
+border-top-left-radius:60px;
+border-top-right-radius:60px;
+}
+door::before {
+content:"';
+position: absolute;
+left: 45px;
+width: 30px;
+height: 30px;
+background: #333;
+background-image:linear-gradiend (to right,transparent 10%, transparent 90%, #333, 90%), linear-gradient (to bottom,trasparent 10% #6d6d7d 10%, #6d6d7d 90%);
+background-size:10px 10px;
+border:2px solid #333;
+border-top:5px solid #333;
+border-bottom:5px solid #333; 
+}
+door::aftet{
+content:"";
+position: absolute;
+top:30px;
+right: 45px;
+width:30px;
+height:30px;
+background: #333;
+background-image:linear-gradiend (to right,transparent 10%, transparent 90%, #333, 90%), linear-gradient (to bottom,trasparent 10% #6d6d7d 10%, #6d6d7d 90%);
+background-size:10px 10px;
+border:2px solid #333;
+border-top:5px solid #333;
+border-bottom:5px solid #333; 
+}
+.lie {
+position: absolute;
+top: 40%;
+width: 100%;
+height: 100px;
+border-top: 5px solid #257582;
+border-bottom: 5px solid #257582;
+}
+.adjst {
+top: 30%;
+}
+.windows_right {
+position: absolute;
+width: 5px;
+height: 5px;
+top: 90px;
+right: 6px;
+background: #333;
+background-image:linear-gradiend (to right,transparent 10%, transparent 90%, #333, 90%), linear-gradient (to bottom,trasparent 10% #6d6d7d 10%, #6d6d7d 90%);
+background-size:10px 10px;
+border:2px solid #333;
+border-top:5px solid #333;
+border-bottom:5px solid #333; 
+}
+.windows_right::before {
+content:"";
+position: absolute;
+top: 90px;
+width: 50px;
+height: 60px;
+background: #333;
+background-image:linear-gradiend (to right,transparent 10%, transparent 90%, #333, 90%), linear-gradient (to bottom,trasparent 10% #6d6d7d 10%, #6d6d7d 90%);
+background-size:10px 10px;
+border:1px solid #333;
+border-top:2px solid #333;
+border-bottom:2px solid #333; 
+border-top-left-radius: 60px;
+border-top-right-radius: 60px;
+}
+.sie {
+position: absolute;
+bottom: 0;
+left: 10px;
+width: 30px;
+height: 500px;
+backgrond: #f1f1f1;
+}
+.side::before {
+content:"";
+position: absolute;
+left: 20%;
+width: 100px;
+height:100px;
+background:#f00;
+transform: translatex(-50%)rotate(45deg);
+border-top: 3px solid #222;
+border-left: 3px solid #222;
+}
+.side::after {
+content:"";
+position: absolute;
+width:70px;
+height: 40px;
+background: #333;
+}
+.tree {
+position: absolute;
+top:10px;
+left:10px;
+width: 4px;
+height:20px;
+background: #f0f;
+border-top-left-radius:100px;
+border-bottom-left-radius: 100px;
+transform: rotate(325deg);
+}
+.tree::before {
+top:20px;
+left: 10px;
+width: 30px;
+height: 12px;
+background: #424242;
+trabsform:rotate(45deg);
+}
+</style>
+</body>
+<div class="house"></div>
+<div class="main"></div>
+<div class="windows_right"></div>
+<div class="windows_left"></div>
+<div class="line adjst"></div>
+<div class="roof"></div>
+<div class="front"></div>
+<div class="line"></div>
+<div class="door"></div>
+<div class="side"></div>
+<div class="line"></div>
+<div class="windows"></div>
+<div class="tree"></div>
+<div class="tree tree2"></div>
+</body>
+</html>
