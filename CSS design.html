@@ -1,10 +1,41 @@
-<html>
+<!Doctype html>
+<html lang="en">
 <head>
-  <title>
-    hamisu kainuwa
-  </title>
-  <h1>welcome to kainuwa web page </h1>
+  <title> hamisu kainuw</title>
+  <meta name="veiwport" content="width=device-width,initial-scrol-1.0">
+  <style>
+    body{
+      margin:0px;
+      padding:0px;
+      background-color:blue;
+      color:white;
+    }
+    form{
+      width:10em;
+      height:auto;
+      border-radius:5px;
+    }
+      
+</style  
 </head>
-<style>
-</style>
+<body>
+<form action="/storage/emulated/0/Hamisu.py"method="post">
+     <h1>kainuwa online class</h1>
+
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+  <button type="submit">Register</button>
+  <p id="registration-message">successful</p>
+</form>
+<script>
+document.getElementById("registration-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var name = document.getElementById("name").value;
+  document.getElementById("registration-message").innerHTML = "Hello, " + name + "! Your registration is successful.";
+});
+</script>
+</body>
+</html>
+
+
 </html>
